@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Footer.module.css'
+import styles from './footer.module.css'
 import NavLink from '../ui/NavLink'
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
             <ul className={styles.nav}>
               <li><NavLink href="/about">About Us</NavLink></li>
               <li><NavLink href="/contact">Contact</NavLink></li>
-              <li><NavLink href="/privacy">Privacy Policy</NavLink></li>
+              <li><NavLink href="/">Privacy Policy</NavLink></li>
             </ul>
           </div>
         </footer>
