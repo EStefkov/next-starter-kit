@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 
 import { getAllPosts } from '@/lib/posts'
+import { ErrorBoundary } from 'next/dist/client/components/error-boundary'
 
 const  Page =  async() => {
   
@@ -17,11 +18,15 @@ const  Page =  async() => {
           <li key={post.slug}>
             <Link href={`/posts/${post.slug}`}>
               <h4 className='text-lg font-medium'>
+                
                 {post.frontmatter?.title}
+          
               </h4>
               <p className='text-sm text-gray-500'>
                 sss
+                
                 {post.frontmatter?.author}
+                
               </p>
             </Link>
           </li>
