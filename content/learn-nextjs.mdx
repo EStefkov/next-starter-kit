@@ -1,0 +1,45 @@
+---
+title: NextJs Course
+author: Nqkuv si 
+---
+
+# Welcome to my MDX page!
+ 
+ < Newsletter />
+
+This is a list of items:
+ 
+- One
+- Two
+- Three
+
+```jsx
+import { getPostBySlug } from '@/lib/posts'
+
+const page = async ({params}) => {
+    const {slug} = params
+
+     const {content,frontmetter} = await getPostBySlug(slug)
+
+  return (
+   
+    <section className='py-24'>
+        <div className='container'>
+            {/* Post frontmetter */}
+            <header className='rounded bg-gray-100 p-8'>
+                <h1 className='font-serif text-3x1'>{frontmetter}</h1>
+                <p className='text-sm font-light uppercase leading-snug'> 
+               author
+                </p>
+            </header>
+            <main className='prose mt-12'>{content}</main>
+        </div>
+    </section>
+
+  )
+}
+
+export default page
+
+```
+ 
