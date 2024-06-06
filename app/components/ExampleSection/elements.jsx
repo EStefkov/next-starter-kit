@@ -3,7 +3,7 @@ import React from 'react';
 
 const ExampleSection = () => {
   return (
-    <div className="relative bg-accent py-10 lg:py-20">
+    <div className="relative py-10 lg:py-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           
