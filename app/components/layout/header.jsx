@@ -2,10 +2,11 @@ import React from 'react'
 
 import NavLink from '../ui/NavLink'
 import ContactButton from '../ui/ContactButton'
+import ThemeButton from '../ui/ThemeButton'
 const Header = () => {
   return (
-    <header className="bg-blue-100 p-4">
-    <nav className='container'>
+    <header className=" p-4">
+    <nav className='container flex items-center justify-between'>
       <ul className="flex gap-3 m-4 ">
         <li>
         <NavLink href="/" >Home</NavLink>
@@ -17,6 +18,9 @@ const Header = () => {
           <NavLink href="/posts" >Posts</NavLink>
           </li>
         </ul>
+
+
+        <ThemeButton />
       </nav>
     </header>
   )

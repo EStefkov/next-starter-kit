@@ -1,8 +1,6 @@
-import styles from'./page.module.css'
-
 import Head from 'next/head';
 import ExampleSection from './components/ExampleSection';
-import { Theme } from '@radix-ui/themes';
+
 
 
 
